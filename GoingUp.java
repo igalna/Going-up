@@ -6,7 +6,6 @@ public class GoingUp {
         Scanner keyboard = new Scanner(System.in);
         
         boolean total = true;
-        boolean current = true;
         
         int userNum1;
         int userNum2;
@@ -18,11 +17,9 @@ public class GoingUp {
             System.out.print("Enter another number > ");
             userNum2 = keyboard.nextInt();
             
-            if (userNum2 != (userNum1+1)) {
+        if (userNum2 != (userNum1+1) && userNum2 != -1) {
+                System.out.println("Hello");
                 total = false;
-            }
-            else {
-                total = true;
             }
             userNum1 = userNum2;
         }
